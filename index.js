@@ -1,6 +1,6 @@
 async function getData(){
     try{
-        let res = await fetch("https://api.unsplash.com/photos/?per_page=30?client_id=s6cc2fVFovfJoYi3kOWiYxUGXPgOi6U0y8v1RwY9TRQ")
+        let res = await fetch("https://api.unsplash.com/photos/?client_id=s6cc2fVFovfJoYi3kOWiYxUGXPgOi6U0y8v1RwY9TRQ")
         let data = await res.json();
         console.log(data)
         showData(data)
